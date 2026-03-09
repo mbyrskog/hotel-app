@@ -25,13 +25,13 @@
           <button
             class="btn btn-sm btn-danger mx-1"
             (click)="deleteReservation(reservation.id)"
-            >
+          >
             Delete
           </button>
           <button
             class="btn btn-sm btn-secondary mx-1"
             [routerLink]="['/edit', reservation.id]"
-            >
+          >
             Edit
           </button>
         </td>
@@ -45,6 +45,5 @@
 } @else {
   <p>No reservation available.</p>
 }
-
 
 <app-footer></app-footer>
