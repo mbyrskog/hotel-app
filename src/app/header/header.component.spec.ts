@@ -19,7 +19,7 @@ describe('HeaderComponent', () => {
   it('should display the correct title', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h2')?.textContent).toContain(
-      'Welcome to MB Hotels Reservation Portal!'
+      'Welcome to MB Hotels Reservation Portal!',
     );
   });
 
