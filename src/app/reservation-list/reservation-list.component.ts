@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ReservationService } from '../service/reservation.service';
 import { Reservation } from '../models/reservation';
 
@@ -6,6 +6,7 @@ import { Reservation } from '../models/reservation';
   selector: 'app-reservation-list',
   templateUrl: './reservation-list.component.html',
   styleUrls: ['./reservation-list.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false,
 })
 export class ReservationListComponent implements OnInit {
